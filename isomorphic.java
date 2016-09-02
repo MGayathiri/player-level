@@ -20,7 +20,7 @@ ss.delete(i,i+1);
 ss.insert(i,s.charAt(i));}
 }
 }
-if(s==ss){System.out.println("True");}
+if(s.toString().equals(ss.toString())){System.out.println("True");}
 else{System.out.println("false");}
 }
 else{System.out.println("false");}
