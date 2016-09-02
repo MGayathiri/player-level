@@ -3,12 +3,13 @@ import java.util.*;
 class stringint{
 public static void main(String[] args){
 Scanner sc=new Scanner(System.in);
-String s=next();
+System.out.println("String:");
+String s=sc.next();
 int n=0;
 try{
 if(s.length()>0){
 n=Integer.parseInt(s);
-System.out.println(n);
+System.out.println("Integer:"+n);
 }
 }
 catch(Exception e){
