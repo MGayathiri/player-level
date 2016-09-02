@@ -8,14 +8,16 @@ StringBuffer ss=new StringBuffer (sc.next());
 Map<Character,Character> m=new HashMap<Character,Character>(); 
 if(s.length()==ss.length()){
 for(int i=0;i<s.length();i++){
-if(m.put(s.charAt(i),ss.charAt(i))){
+if(m.get(s.charAt(i))==null){
+  m.put(s.charAt(i),ss.charAt(i));
 ss.delete(i,i+1);
 ss.insert(i,s.charAt(i));
 }
 else{
 char c=m.get(s.charAt(i));
+if(c==ss.charAt(i)){
 ss.delete(i,i+1);
-ss.insert(i,s.charAt(i));
+ss.insert(i,s.charAt(i));}
 }
 }
 if(s==ss){System.out.println("True");}
