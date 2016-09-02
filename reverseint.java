@@ -7,7 +7,7 @@ int n=sc.nextInt();
 if(n>9){
 while(n!=0)
 {
-System.out.println(n%10);
+System.out.print(n%10);
 n=n/10;
 }
 
