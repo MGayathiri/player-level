@@ -4,7 +4,7 @@ class swpeveod{
 public static void main(String[] args){
 Scanner sc=new Scanner(System.in);
 StringBuffer s= new StringBuffer(sc.next());
-Set<Integer> st=new TreeSte<Integer>()
+Set<Integer> st=new TreeSet<Integer>();
 for (int i=0;i<s.length();i++){
   if(st.add(i)&&st.add(i+2))
   {
